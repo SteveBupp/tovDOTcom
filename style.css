@@ -247,8 +247,10 @@ a {
 }
 
 .bandsintown-container {
-    height: var(--content-size);
-    width: var(--content-size);
+    max-width: var(--content-size);
+    max-height: var(--content-size);
+    min-width: 300px;
+    min-height: 300px;
     padding: 15px;
     border: 1px solid var(--terciary-color);
     border-radius: 15px;
