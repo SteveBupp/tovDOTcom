@@ -10,7 +10,7 @@
     --off-screen: calc(100vh + 200px);
     color: var(--font-color);
 
-    --content-size: 300px;
+    --content-size: 400px;
 
 }
 
@@ -93,8 +93,11 @@ a {
 }
 
 .hero-body h1 {
-    font-size: clamp(2.2rem, 2.5vw, 5rem);
+    font-size: 5rem;
     text-align: center;
+    font-family: "Ruthie", cursive;
+    font-weight: 400;
+    font-style: normal;
     grid-row: 1;
     height: fit-content;
 
@@ -337,7 +340,7 @@ article {
 }
 
 .contact-grid {
-    height: var(--content-size);
+    height: calc(var(--content-size)*1.4);
     width: var(--content-size);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -347,7 +350,7 @@ article {
 }
 
 .contact-grid img {
-    height: calc(var(--content-size)/2);
+    height: var(--content-size);
     justify-self: center;
 
 }
@@ -369,7 +372,7 @@ article {
 
 .fa-brands {
     color: var(--terciary-color);
-    font-size: 2.5rem;
+    font-size: 4rem;
 
 }
 
@@ -400,7 +403,7 @@ article {
 @media screen and (min-width: 1200px) {
 
     :root {
-        --content-size: 400px;
+        --content-size: 500px;
 
     }
 
@@ -452,7 +455,7 @@ article {
     .hero-body h1 {
         grid-column: 2;
         grid-row: 1;
-        font-size: 3rem;
+        font-size: 3.7rem;
         text-align: left;
         white-space: wrap;
         width: var(--content-size);
@@ -482,14 +485,14 @@ article {
     }
 
     .tour-container {
-        grid-column: 2;
+        grid-column: 3;
         height: 100dvh;
         width: 100dvw;
 
     }
 
     .bio-container {
-        grid-column: 3;
+        grid-column: 2;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 30dvh 60dvh;
 
@@ -522,7 +525,7 @@ article {
     }
 
     .discography-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
 
@@ -543,7 +546,7 @@ article {
     }
 
     .fa-brands {
-        font-size: 4rem;
+        font-size: 5rem;
 
     }
 
