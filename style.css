@@ -115,8 +115,10 @@ a {
 .collage-container {
     position: relative;
     grid-row: 2;
-    width: var(--content-size);
-    height: var(--content-size);
+    max-width: var(--content-size);
+    max-height: var(--content-size);
+    min-width: 300px;
+    min-height: 300px;
     align-self: center;
     justify-self: center;
 
