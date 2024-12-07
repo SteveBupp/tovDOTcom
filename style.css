@@ -29,6 +29,7 @@ body {
     height: 100dvh;
     width: 100dvw;
     background-image: url('img/TOV_Collage.png');
+    z-index: 0;
 }
 
 body::before {
@@ -41,7 +42,6 @@ body::before {
     width: 100dvw;
 
 }
-
 
 a {
     text-decoration: none;
