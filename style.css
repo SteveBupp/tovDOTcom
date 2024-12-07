@@ -29,10 +29,9 @@ body {
     height: 100dvh;
     width: 100dvw;
     background-image: url('img/TOV_Collage.png');
-    z-index: 0;
 }
 
-body::before {
+.bg-div {
     position: fixed;
     content: "";
     background: radial-gradient(circle, #301040, #000000);
@@ -42,6 +41,7 @@ body::before {
     width: 100dvw;
 
 }
+
 
 a {
     text-decoration: none;
@@ -118,18 +118,6 @@ a {
     background-color: black;
     opacity: .5;
     z-index: -1;
-
-}
-
-.landing-container::after{
-    position: fixed;
-    top: 0;
-    left: 0;
-    content: "";
-    height: 100dvh;
-    width: 100dvw;
-    background-image: url('img/TOV_Collage.png');
-    z-index: -2;
 
 }
 
