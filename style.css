@@ -58,32 +58,36 @@ a {
     text-decoration: none;
 }
 
-.r1{
+.r1 {
     transform: rotate(5deg);
 
 }
 
-.r2{
+.r2 {
     transform: rotate(-3deg);
 
 }
 
-.r3{
+.r3 {
     transform: rotate(1deg);
 
 }
 
-.r4{
+.r4 {
     transform: rotate(-6deg);
 
 }
 
-.r5{
+.r5 {
     transform: rotate(2deg);
 
 }
 
-.r1, .r2, .r3, .r4, .r5 {
+.r1,
+.r2,
+.r3,
+.r4,
+.r5 {
     transition: transform 0.3s ease-in-out;
 
 }
@@ -132,7 +136,7 @@ a {
 
 }
 
-.landing-container iframe{
+.landing-container iframe {
     width: 70dvw;
     height: calc((70dvw/16)*9);
 }
@@ -318,21 +322,6 @@ a {
 
 }
 
-.tour-photo-container {
-    perspective: 1000px;
-    display: none;
-
-}
-
-
-.tilt-img {
-    transition: transform 0.1s ease-out;
-    transform-origin: center;
-    width: 100%;
-    height: auto;
-
-}
-
 /*bio*/
 .bio-container {
     scroll-snap-align: start;
@@ -344,14 +333,54 @@ a {
 }
 
 .profile-container {
-    grid-row: 1;
-    perspective: 1000px;
-    padding: 5dvh;
+    height: 40dvh;
+    width: 50dvw;
+    margin: 2rem;
+
 }
 
-.profile-container img {
-    height: var(--content-size);
-    width: auto;
+.photo-container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.prof-photo {
+    position: absolute;
+    height: 50vw;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+
+}
+
+.prof-photo:nth-child(1) {
+    top: -5vw;
+    left: 12vw;
+    z-index: 1;
+    transform: rotate(-6deg);
+
+}
+
+.prof-photo:nth-child(2) {
+    top: 5vw;
+    left: 0vw;
+    z-index: 3;
+    transform: rotate(-3deg);
+
+}
+
+.prof-photo:nth-child(3) {
+    top: -10vw;
+    left: -5vw;
+    z-index: 2;
+    transform: rotate(2deg);
+
+}
+
+.prof-photo:hover {
+    transform: rotate(0deg);
+    z-index: 4;
 
 }
 
@@ -462,12 +491,12 @@ article {
 
 }
 
-.merch-card:hover .def-merch{
+.merch-card:hover .def-merch {
     opacity: 0;
 
 }
 
-.merch-card:hover .hover-merch{
+.merch-card:hover .hover-merch {
     opacity: 1;
 
 }
@@ -668,6 +697,14 @@ article {
     .profile-container {
         grid-column: 1;
         grid-row: 1 / span 2;
+        height: 20dvh;
+        width: 20dvw;
+        margin: 2rem;
+    }
+
+    .prof-photo {
+        height: 25vw;
+
     }
 
     .bio-container h2 {
@@ -717,7 +754,7 @@ article {
     .merch-card img {
         height: calc(var(--content-size)*.6);
         width: auto;
-    
+
     }
 
     .contact-container {
