@@ -28,6 +28,7 @@ body {
 body {
     height: 100dvh;
     width: 100dvw;
+    background-color: #000000;
 }
 
 .bg-div::before {
@@ -515,7 +516,7 @@ article {
 
 .fa-brands {
     color: var(--terciary-color);
-    font-size: 3.2rem;
+    font-size: 2rem;
 
 }
 
