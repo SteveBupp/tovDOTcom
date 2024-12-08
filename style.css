@@ -28,20 +28,30 @@ body {
 body {
     height: 100dvh;
     width: 100dvw;
-    background-image: url('img/TOV_Collage.png');
 }
 
-.bg-div {
+.bg-div::before {
     position: fixed;
     content: "";
     background: radial-gradient(circle, #301040, #000000);
-    z-index: -20;
     opacity: .90;
     height: 100dvh;
     width: 100dvw;
+    z-index: -20;
 
 }
 
+.bg-div::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background-image: url('img/TOV_Collage.png');
+    z-index: -30;
+
+}
 
 a {
     text-decoration: none;
@@ -104,20 +114,20 @@ a {
     display: grid;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
     overflow: hidden;
 
 }
 
-.landing-container::before{
+.landing-container::after {
     position: fixed;
-    top: 0;
-    left: 0;
     content: "";
     height: 100dvh;
     width: 100dvw;
-    background-color: black;
-    opacity: .5;
-    z-index: -1;
+    left: 0;
+    top: 0;
+    background-image: url('img/TOV_Collage.png');
+    z-index: -30;
 
 }
 
